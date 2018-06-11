@@ -21,6 +21,7 @@
   "devDependencies": {
     "@vue/test-utils": "^1.0.0-beta.16",
     "babel-core": "^6.26.0",
+    "babel-jest": "^23.0.1",
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.0",
     "babel-preset-stage-3": "^6.24.1",
@@ -28,9 +29,20 @@
     "css-loader": "^0.28.7",
     "file-loader": "^1.1.4",
     "jest": "^23.1.0",
+    "vue-jest": "^2.6.0",
     "vue-loader": "^13.0.5",
     "vue-template-compiler": "^2.4.4",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "babel-jest",
+      ".*\\.(vue)$": "vue-jest"
+    }
   }
 }
