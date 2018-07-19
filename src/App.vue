@@ -5,16 +5,16 @@
 </template>
 
 <script>
-import CoolCard from "./components/CoolCard.vue";
+import CoolCard from './components/CoolCard.vue';
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
     CoolCard
   },
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
+      msg: 'Welcome to Your Vue.js App'
     };
   }
 };
@@ -22,7 +22,7 @@ export default {
 
 <style>
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;

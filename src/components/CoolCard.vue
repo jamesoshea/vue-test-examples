@@ -9,7 +9,28 @@
 
 <script>
 export default {
-  name: 'CoolCard'
+  name: 'CoolCard',
+  props: {
+    wow: {
+      type: String,
+      required: false
+    }
+  },
+  data() {
+    return {
+      buzzword: ''
+    };
+  },
+  computed: {
+    someComputedProperty() {
+      return `${this.buzzword} is very big`;
+    }
+  },
+  methods: {
+    someMethod(arg1, arg2) {
+      return arg1 + arg2;
+    }
+  }
 };
 </script>
 
