@@ -1,13 +1,13 @@
 <template>
-  <div
-    class="vte__cool-card"
-    data-test="cool-card-div"
-  >
-    hello I am a card :)
+  <div class="vte__cool-card">
+    <p data-test="cool-card-div" v-text="'hello I am a card :)'" />
+    <p>Current Total:</p>
+    <p>{{ currentTotal }}</p>
   </div>
 </template>
 
 <script>
+import { mapGetters } from 'vuex';
 export default {
   name: 'CoolCard',
   props: {
@@ -22,6 +22,9 @@ export default {
     };
   },
   computed: {
+    ...mapGetters({
+      currentTotal: 'basket/currentTotal'
+    }),
     someComputedProperty() {
       return `${this.buzzword} is very big`;
     }
