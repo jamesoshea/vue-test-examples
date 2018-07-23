@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CoolCard should render content correctly 1`] = `
+<div
+  class="vte__cool-card"
+>
+  <p
+    data-test="cool-card-div"
+  >
+    hello I am a card :)
+  </p>
+   
+  <p>
+    Current Tokjbtal:
+  </p>
+   
+  <p>
+    567
+  </p>
+   
+  <button>
+    Increment
+  </button>
+</div>
+`;

@@ -22,9 +22,7 @@ describe('CoolCard', () => {
   });
   test('should render content correctly', () => {
     const wrapper = mount(CoolCard, { store, localVue });
-    expect(wrapper.find('[data-test="cool-card-div"]').text()).toEqual(
-      'hello I am a card :)'
-    );
+    expect(wrapper.vm.$el).toMatchSnapshot();
   });
   test('someMethod should add numbers together', () => {
     const wrapper = mount(CoolCard, { store, localVue });

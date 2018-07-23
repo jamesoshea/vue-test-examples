@@ -18,7 +18,6 @@ describe('CoolCardNaive', () => {
           namespaced: true,
           actions,
           getters: {
-            projectId: () => 4,
             currentTotal: () => 789
           }
         }
