@@ -1,8 +1,6 @@
 import Vue from 'vue';
 import Vuex from 'vuex';
 
-import MockCountries from './MockCountries.json';
-
 Vue.use(Vuex);
 
 export default (getters, actions) =>
