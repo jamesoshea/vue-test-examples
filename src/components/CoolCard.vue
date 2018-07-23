@@ -3,6 +3,7 @@
     <p data-test="cool-card-div" v-text="'hello I am a card :)'" />
     <p>Current Total:</p>
     <p>{{ currentTotal }}</p>
+    <button @click="incrementTotal">Increment</button>
   </div>
 </template>
 
@@ -30,6 +31,9 @@ export default {
     }
   },
   methods: {
+    incrementTotal() {
+      this.$store.dispatch('basket/incrementTotal', this.currentTotal + 1);
+    },
     someMethod(arg1, arg2) {
       return arg1 + arg2;
     }

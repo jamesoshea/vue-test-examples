@@ -6,7 +6,9 @@ import StoreFactory from './utils/StoreFactory';
 const localVue = createLocalVue();
 localVue.use(Vuex);
 
-const actions = {};
+const actions = {
+  incrementTotal: jest.fn()
+};
 
 describe('CoolCard', () => {
   let store;
